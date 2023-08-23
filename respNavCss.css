@@ -1,0 +1,117 @@
+*{
+    margin: 0px 0px;
+} 
+body{
+    background: linear-gradient(45deg, #cef1f0, #f6e2ec);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5cm; 
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: .5cm;  
+    width: fit-content;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;    
+}
+
+.navigation1{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items:center;
+    padding: 0.2cm 0.5cm;
+    border:0.5px solid grey;
+    margin-bottom: 0.5cm;
+    background-color: rgb(187, 208, 243);
+   /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
+}
+
+
+.navigation2{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0.2cm 0.5cm;
+    border:0.5px solid grey;
+    margin-bottom: 0.5cm;
+    background-color: rgb(200, 235, 204);
+   /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    column-gap:2cm;
+
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    column-gap:0.2cm;
+    align-items:center;
+}
+
+.item{
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+@keyframes coloring{
+    from { color: black }
+    to { color:#df1e1e}
+  }
+  
+.item:hover{
+    animation: coloring 0.5s steps(40, end);
+    transform:scale(1.1);
+    color: #df1e1e;
+    cursor: pointer;
+}
+.btn{
+    padding: 0.2cm 0.5cm;
+    background-color: rgb(24, 104, 56);
+    color:white;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(8, 82, 38);
+}
+
+.intro{
+    font-family: Quintessential;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0.2cm;
+}
+
+
+.btn1{
+    padding: 0.4cm 0.8cm;
+    background-color: rgb(49, 130, 235);
+    color:white;
+    font-size: 25px;
+    border-radius: 12px;
+    border:none;
+}
+
+.btn1:hover{
+    transform:scale(1.1);
+    background-color: rgb(44, 98, 199);
+}
+
+.main{
+    background-color: #df90bb;
+}

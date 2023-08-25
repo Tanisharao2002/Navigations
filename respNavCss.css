@@ -1,9 +1,20 @@
 *{
     margin: 0px 0px;
+    color:beige
 } 
+
 body{
-    background: linear-gradient(45deg, #cef1f0, #f6e2ec);
+    font-size: 14px;
 }
+
+.bodybg{
+    background-color: #393939;
+}
+
+.main{
+    border: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -22,7 +33,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid black;    
+    border: 2px solid rgb(43, 42, 42);    
 }
 
 .navigation1{
@@ -31,9 +42,8 @@ body{
     justify-content:space-between ;
     align-items:center;
     padding: 0.2cm 0.5cm;
-    border:0.5px solid grey;
     margin-bottom: 0.5cm;
-    background-color: rgb(187, 208, 243);
+    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
    /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
 }
 
@@ -44,11 +54,11 @@ body{
     justify-content:space-between;
     align-items:center;
     padding: 0.2cm 0.5cm;
-    border:0.5px solid grey;
     margin-bottom: 0.5cm;
-    background-color: rgb(200, 235, 204);
+    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
    /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
 }
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -66,6 +76,7 @@ body{
 .item{
     font-family: Roboto;
     font-weight: 500;
+    
 }
 
 @keyframes coloring{
@@ -92,17 +103,17 @@ body{
 
 .intro{
     font-family: Quintessential;
-    font-size: 20px;
+    font-size: 14px;
     cursor: pointer;
     padding: 0.2cm;
 }
 
 
 .btn1{
-    padding: 0.4cm 0.8cm;
+    padding: 0.3cm 0.5cm;
     background-color: rgb(49, 130, 235);
     color:white;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 12px;
     border:none;
 }
@@ -112,6 +123,3 @@ body{
     background-color: rgb(44, 98, 199);
 }
 
-.main{
-    background-color: #df90bb;
-}

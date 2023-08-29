@@ -14,7 +14,7 @@
 <body class="bodybg">
   
     <div class="container">
-        <div class="navigation1 main">
+        <div class="navigation main">
         <div class="logo-container">
             <img class="logo" src="code.png"></img>
             <h2>Tanisha Rao </h2>
@@ -32,7 +32,7 @@
             <img class="logo" src="sun.svg"></img>
             <h3>Company Name1</h3>
         </div>
-        <img class="menu-icon" src="menu-burger.svg"></img>
+        <img class="menu-icon"  id="menu-icon" src="menu-burger.svg" onclick="openNav( )"></img>
         <div class="menu-container">
                  
                 <h4 class="item">Home</h4>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="menu">
-            <img class="menu-icon" src="menu-burger.svg"></img>
+            <img class="menu-icon"  id="menu-icon" src="menu-burger.svg" onclick="openNav( )"> </img>
             <div class="menu-container">
                 
                 <h4 class="item">Home</h4>
@@ -70,11 +70,19 @@
     </div>
 </div>
 
-<div class="overlay">
+<div class="overlay" id="overlay">
+    <img class="cls-btn" src="back.svg" id="cls-btn" onclick="closeNav( )"></img>
     <div class="overlayItems">
+        <h4 class="items">Home</h4>
+        <h4 class="items">About Us</h4>
+        <h4 class="items">Career</h4>
+        <h4 class="items">Contact Us</h4>
         
     </div>
 </div>
+
+<script src="respNav.js"></script>
+
 </body>
 
 </html>

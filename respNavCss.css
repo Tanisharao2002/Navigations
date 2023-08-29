@@ -3,12 +3,19 @@
     color: rgb(41, 41, 40)
 }
 
-body {
-    font-size: 14px;
+@keyframes coloring {
+    from {
+        color: black
+    }
+
+    to {
+        color: #df1e1e
+    }
 }
 
-.main {
-    border: none;
+/*Nav Starts*/
+body {
+    font-size: 14px;
 }
 
 .container {
@@ -32,48 +39,22 @@ body {
     border: 2px solid rgb(43, 42, 42);
 }
 
-
-.navigation {
+.logo-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 0.2cm;
     align-items: center;
-    padding: 0.2cm 0.5cm;
-    margin-bottom: 0.5cm;
-    background-color: #a9ddce;
-    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
-    /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
-}
-
-.navigation1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2cm 0.5cm;
-    margin-bottom: 0.5cm;
-    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
-    /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
-}
-
-.navigation2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2cm 0.5cm;
-    margin-bottom: 0.5cm;
-    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
-    /* height: 20vh; !height noii leni, responsiveness m dikkat kregi!*/
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     column-gap: 2cm;
-
 }
 
+/*Nav Ends*/
+
+/*Responsive Menu Starts - Overlay*/
 .menu-icon {
     width: 30px;
     height: 30px;
@@ -91,27 +72,13 @@ body {
     }
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.2cm;
-    align-items: center;
-}
+/*Responsive Menu Ends - Overlay*/
 
+/*  Menu List Starts */
 .item {
     font-family: Roboto;
     font-weight: 500;
-
-}
-
-@keyframes coloring {
-    from {
-        color: black
-    }
-
-    to {
-        color: #df1e1e
-    }
+    padding: 0.5cm;
 }
 
 .item:hover {
@@ -119,13 +86,65 @@ body {
     transform: scale(1.1);
     color: #df1e1e;
     cursor: pointer;
+    background-color: rgb(154, 212, 251);
+}
+
+/*  Menu List Ends */
+
+.navigation-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2cm 0.5cm;
+    margin-bottom: 0.5cm;
+    background-color: #a9ddce;
+    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
+    border: none;
+    /*height noii leni, responsiveness m dikkat kregi!*/
+}
+
+.btn1 {
+    padding: 0.3cm 0.5cm;
+    background-color: rgb(214, 106, 167);
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+}
+
+.btn1:hover {
+    transform: scale(0.5cm);
+    background-color: rgb(193, 81, 139);
+}
+
+.navigation1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2cm 0.5cm;
+    margin-bottom: 0.5cm;
+    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
+    /*height noii leni, responsiveness m dikkat kregi!*/
+}
+
+.navigation2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2cm 0.5cm;
+    margin-bottom: 0.5cm;
+    box-shadow: 0px 0px 5px 0px rgba(101, 98, 98, 0.75);
+    /*height noii leni, responsiveness m dikkat kregi!*/
 }
 
 .btn {
     padding: 0.2cm 0.5cm;
     background-color: rgb(48, 156, 62);
     color: white;
-    border:none;
+    border: none;
     border-radius: 5px;
 }
 
@@ -140,21 +159,7 @@ body {
     padding: 0.2cm;
 }
 
-
-.btn1 {
-    padding: 0.3cm 0.5cm;
-    background-color: rgb(214, 106, 167);
-    color: white;
-    font-size: 20px;
-    border-radius: 12px;
-    border: none;
-}
-
-.btn1:hover {
-    transform: scale(0.5cm) ;
-    background-color: rgb(193, 81, 139);
-}
-
+/*Overlay Section Start*/
 .overlay {
     display: flex;
     flex-direction: column;
@@ -166,19 +171,19 @@ body {
     position: fixed;
     z-index: 1;
     background-color: rgb(17, 128, 107);
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     overflow: hidden;
 }
 
-.overlayItems{
+.overlayItems {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 0.5cm;
     cursor: pointer;
-    color:black;
+    color: black;
 }
 
 .cls-btn {
@@ -191,12 +196,13 @@ body {
     font-family: Roboto;
     font-weight: 500;
     color: #eae4e4;
-
 }
 
-.items:hover{
+.items:hover {
     animation: coloring 0.5s steps(40, end);
     transform: scale(1.1);
     color: #df1e1e;
     cursor: pointer;
 }
+
+/*Overlay Section Ends*/

@@ -11,77 +11,76 @@
         rel="stylesheet" />
 </head>
 
-<body class="bodybg">
-  
+<body>
     <div class="container">
-        <div class="navigation main">
-        <div class="logo-container">
-            <img class="logo" src="code.png"></img>
-            <h2>Tanisha Rao </h2>
-            
-        </div>
-        <h1>Navigations</h1>
-        <a href="https://github.com/Tanisharao2002">
-           <button class="btn1">GitHub</button>
-        </a>
-        </div>
-        <p class="intro">1. Navigation Bar with <b>Logo on the left</b>, <b>Menu Items in the center</b> and <b>Get Started Button on the right.</b>
-           This code is written using space between property of flexbox.</p>
-    <div class="navigation1 white">
-        <div class="logo-container">
-            <img class="logo" src="sun.svg"></img>
-            <h3>Company Name1</h3>
-        </div>
-        <img class="menu-icon"  id="menu-icon" src="menu-burger.svg" onclick="openNav( )"></img>
-        <div class="menu-container">
-                 
-                <h4 class="item">Home</h4>
-                <h4 class="item">About Us</h4>
-                <h4 class="item">Career</h4>
-                <h4 class="item">Contact Us</h4>
-        </div>
-        <button class="btn">Get Started</button>   
-    </div>
-
-    <p class="intro">2. Navigation Bar with <b>Logo and Menu Items on the left, Menu and Get Started Button on the right.</b>
-        This code is written using space between property of flexbox.</p>
-
-   
-    <div class="navigation2 white">
-        <div class="logo-container">
-            <img class="logo" src="sun.svg"></img>
-            <h3>Company Name2</h3>
-        </div>
-
-        <div class="menu">
-            <img class="menu-icon"  id="menu-icon" src="menu-burger.svg" onclick="openNav( )"> </img>
-            <div class="menu-container">
-                
-                <h4 class="item">Home</h4>
-                <h4 class="item">About Us</h4>
-                <h4 class="item">Career</h4>
-                <h4 class="item">Contact Us</h4>
-                <button class="btn">Get Started</button>
-
+        <!--Main Navigation Of Site-->
+        <div class="navigation-main"><!--Navigation Main-->
+            <div class="logo-container"><!--Logo Container-->
+                <img class="logo" src="code.png"></img>
+                <h2>Tanisha Rao </h2>
             </div>
-            
+            <h1>Navigations</h1><!--Title-->
+            <a href="https://github.com/Tanisharao2002">
+                <button class="btn1">GitHub</button><!--Button-->
+            </a>
         </div>
-
+        <!--Description 1 of Navigation 1-->
+        <div class="desc1">
+            <p class="intro">
+                1. Navigation Bar with <b>Logo on the left</b>, <b>Menu Items in the center</b> and <b>Get Started
+                    Button on the right.</b>
+                This code is written using space between property of flexbox.
+            </p>
+            <div class="navigation1">
+                <div class="logo-container">
+                    <img class="logo" src="sun.svg"></img>
+                    <h3>Company Name1</h3>
+                </div>
+                <img class="menu-icon" id="menu-icon" src="menu-burger.svg" onclick="openNav( )"></img>
+                <div class="menu-container">
+                    <h4 class="item">Home</h4>
+                    <h4 class="item">About Us</h4>
+                    <h4 class="item">Career</h4>
+                    <h4 class="item">Contact Us</h4>
+                </div>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+        <!--Description 2 of Navigation 2-->
+        <div class="desc2">
+            <p class="intro">2. Navigation Bar with <b>Logo and Menu Items on the left, Menu and Get Started Button on
+                    the right.</b>
+                This code is written using space between property of flexbox.</p>
+            <div class="navigation2">
+                <div class="logo-container">
+                    <img class="logo" src="sun.svg"></img>
+                    <h3>Company Name2</h3>
+                </div>
+                <div class="menu">
+                    <img class="menu-icon" id="menu-icon" src="menu-burger.svg" onclick="openNav( )"> </img>
+                    <div class="menu-container">
+                        <h4 class="item">Home</h4>
+                        <h4 class="item">About Us</h4>
+                        <h4 class="item">Career</h4>
+                        <h4 class="item">Contact Us</h4>
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="overlay" id="overlay">
-    <img class="cls-btn" src="back.svg" id="cls-btn" onclick="closeNav( )"></img>
-    <div class="overlayItems">
-        <h4 class="items">Home</h4>
-        <h4 class="items">About Us</h4>
-        <h4 class="items">Career</h4>
-        <h4 class="items">Contact Us</h4>
-        
+    <!--Overlay Section For Menu-->
+    <div class="overlay" id="overlay">
+        <img class="cls-btn" src="back.svg" id="cls-btn" onclick="closeNav( )"></img>
+        <div class="overlayItems">
+            <h4 class="items">Home</h4>
+            <h4 class="items">About Us</h4>
+            <h4 class="items">Career</h4>
+            <h4 class="items">Contact Us</h4>
+        </div>
     </div>
-</div>
-
-<script src="respNav.js"></script>
+    <!--JavaScript Section-->
+    <script src="respNav.js"></script>
 
 </body>
 
